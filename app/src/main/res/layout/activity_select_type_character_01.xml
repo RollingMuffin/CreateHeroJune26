@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="ca.universalideas.createherojune26.SelectTypeCharacter">
+
+    <TextView
+        android:id="@+id/textView3"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="@string/app_SelectType"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        android:typeface="normal" />
+
+<!--    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+>
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_TypeOfCharacter"
+            android:cropToPadding="false"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/actionfigure_m" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_TypeOfCharacter"
+            android:scaleType="fitXY"
+            android:src="@drawable/actionfigure_w" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_TypeOfCharacter"
+            android:scaleType="fitXY"
+            android:src="@drawable/brute_m" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_TypeOfCharacter"
+            android:scaleType="fitXY"
+            android:src="@drawable/brute_w" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_TypeOfCharacter"
+            android:scaleType="fitXY"
+            android:src="@drawable/caregiver_m" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_TypeOfCharacter"
+            android:scaleType="fitXY"
+            android:src="@drawable/caregiver_w" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_TypeOfCharacter"
+            android:scaleType="fitXY"
+            android:src="@drawable/centerofinfluence_m" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_TypeOfCharacter"
+            android:scaleType="fitXY"
+            android:src="@drawable/centerofinfluence_w" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_TypeOfCharacter"
+            android:scaleType="fitXY"
+            android:src="@drawable/charge_m" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_TypeOfCharacter"
+            android:scaleType="fitXY"
+            android:src="@drawable/charge_w" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_TypeOfCharacter"
+            android:scaleType="fitXY"
+            android:src="@drawable/companion_m" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_TypeOfCharacter"
+            android:scaleType="fitXY"
+            android:src="@drawable/companion_w" />
+    </ViewFlipper> -->
+
+    <Button
+        android:id="@+id/next"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/previous"
+        android:text="@string/app_btnNext" />
+
+    <Button
+        android:id="@+id/previous"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="56dp"
+        android:text="@string/app_btnPrevious" />
+
+    <Button
+        android:id="@+id/btnGetType"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/next"
+        android:layout_margin="0dp"
+        android:onClick="onGetTypeClick"
+        android:text="@string/app_btnGetType"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

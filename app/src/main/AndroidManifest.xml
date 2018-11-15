@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ca.universalideas.createherojune26">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ActivitySplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".SelectTypeCharacter" />
+        <activity android:name=".PhotoCatalog" />
+        <activity android:name=".SelectMainFeatures02" />
+        <activity android:name=".Portrayal" />
+        <activity android:name=".Biography" />
+        <activity android:name=".PsychologicalDescription" />
+        <activity android:name=".Goals" />
+        <activity android:name=".Values" />
+        <activity android:name=".Skeletons" />
+        <activity android:name=".SelectAllMainFeatures" />
+        <!--<activity android:name=".WebProject" />-->
+        <!--<activity android:name=".PhotoCatalogInner" />-->
+        <activity android:name=".ListdataActivity" />
+
+        <activity android:name=".Cart" />
+        <activity android:name=".PaymentDetails" />
+        <activity android:name=".MiloToClient" />
+    </application>
+</manifest>

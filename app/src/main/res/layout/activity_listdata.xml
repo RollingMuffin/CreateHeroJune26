@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListdataActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/app_selectMF"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+         />
+
+    <TextView
+        android:id="@+id/listdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Apple"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="236dp"
+        android:layout_height="204dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:src="@drawable/apple" />
+
+    <Button
+        android:id="@+id/btnPortrayal"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="172dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btnPsyhoD"
+        android:layout_alignStart="@+id/btnGoals"
+        android:onClick="onPortrayalClick"
+        android:text="@string/app_portrayal" />
+
+    <Button
+        android:id="@+id/btnBiography"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPsyhoD"
+        android:layout_alignEnd="@+id/btnPsyhoD"
+        android:onClick="onBiographyClick"
+        android:text="@string/app_biography" />
+
+    <Button
+        android:id="@+id/btnPsyhoD"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSkeletons"
+        android:layout_alignEnd="@+id/btnSelectAllMainFeatures"
+        android:onClick="onPsychDClick"
+        android:text="@string/app_psDescription" />
+
+    <Button
+        android:id="@+id/btnGoals"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSkeletons"
+        android:layout_alignStart="@+id/btnSelectAllMainFeatures"
+        android:onClick="onGoalsClick"
+        android:text="@string/app_goals" />
+
+    <Button
+        android:id="@+id/btnValues"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSelectAllMainFeatures"
+        android:layout_alignStart="@+id/btnSelectAllMainFeatures"
+        android:onClick="onValuesClick"
+        android:text="@string/app_values" />
+
+    <Button
+        android:id="@+id/btnSkeletons"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSelectAllMainFeatures"
+        android:layout_alignEnd="@+id/btnSelectAllMainFeatures"
+        android:onClick="onSkeletonsClick"
+        android:text="@string/app_skeletons" />
+
+    <Button
+        android:id="@+id/btnSelectAllMainFeatures"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:onClick="onSelectAllMainFeaturesClick"
+        android:text="@string/app_selectAll"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onBackClick"
+        android:text="Select New Type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</RelativeLayout>
